@@ -1,186 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- CSS link -->
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/responsive_pc.css">
-    <link rel="stylesheet" href="/css/responsive_tablet.css">
-    <link rel="stylesheet" href="/css/responsive_mobile.css">
-   <!-- Font link -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-  <!-- remixicon cdn -->
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>INSUN — A to Z Hybrid Designer</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+KR:wght@300;400;700;900&display=swap" rel="stylesheet">
 
-  <!-- emailJS cdn -->
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <title>PORTFOLIO</title>
+
+
+
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<!-- home -->
-<section id="home">
 
-  <aside class="menu">
-    <header>
-    <a href="#home"></a><i>INSUN</i></a>
-    </header> 
-      <nav class="home-nav">
-        <ul>
-        <li><a href="#about">Who I Am</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="pdf">
-        <ul>
-          <li> 
-          <a href="#">RESUME
-            <i class="ri-download-2-line"></i>
-          </a>
-          </li>
-          <li>   
-          <a href="#">PORTFOLIO
-            <i class="ri-download-2-line"></i>
-          </a>  
-          </li>   
-        </ul>
-      </div>
-  </aside>
-  <main>
-    <div class="home-title">
-      <div>A TO Z</div> 
-      <div>HYBRID</div>
-      <div>DESIGNER</div>    
+<!-- ══════════════════════════════
+     SHELL GRID
+══════════════════════════════ -->
+<div class="shell">
+
+  <!-- LOGO CELL -->
+  <div class="cell-logo">
+    <div class="asterisk-wrap">
+      <svg viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- 6 lines through center, like a thin asterisk -->
+        <line x1="27" y1="2"  x2="27" y2="52" stroke="#9B5DE5" stroke-width="1.4"/>
+        <line x1="2"  y1="27" x2="52" y2="27" stroke="#9B5DE5" stroke-width="1.4"/>
+        <line x1="8"  y1="8"  x2="46" y2="46" stroke="#9B5DE5" stroke-width="1.4"/>
+        <line x1="46" y1="8"  x2="8"  y2="46" stroke="#9B5DE5" stroke-width="1.4"/>
+        <line x1="5"  y1="18" x2="49" y2="36" stroke="#9B5DE5" stroke-width="1.4"/>
+        <line x1="5"  y1="36" x2="49" y2="18" stroke="#9B5DE5" stroke-width="1.4"/>
+      </svg>
     </div>
-    <div class="gradient">
-  <!-- Liquid Gradient -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    </div>
-  </main>
-</section>
+    <span class="logo-name">INSUN</span>
+  </div>
+
+  <!-- HEADER MAIN (empty top strip) -->
+  <div class="cell-header-main"></div>
+
+  <!-- NAV CELL -->
+  <div class="cell-nav">
+    <a href="#" class="active" onclick="goTo(0,event)">HOME</a>
+    <a href="#"               onclick="goTo(1,event)">WHO I AM</a>
+    <a href="#"               onclick="goTo(2,event)">WORK</a>
+    <a href="#"               onclick="goTo(3,event)">CONTACT</a>
+  </div>
+
+  <!-- RESUME CELL -->
+  <div class="cell-resume">
+    <span class="dl-label">
+      RESUME
+      
+    </span>
+  </div>
+
+  <!-- PORTFOLIO CELL -->
+  <div class="cell-portfolio">
+    <span class="dl-label">
+      PORTFOLIO
+      <span class="dl-icon">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M8 2v9M4 13h8M5 8l3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+    </span>
+  </div>
+
+  <!-- MAIN VIEWPORT -->
+  <div class="cell-main">
+    <div class="track" id="track">
+
+      <!-- ══ PANEL 1: Home ══ -->
+      <div class="panel" id="panel-home">
+        <div class="hero-left">
+          <!-- top spacer row (aligns with header height) -->
+          <div class="hero-spacer"></div>
+
+          <!-- "A TO Z" aligns with nav area -->
+          <div class="hero-title-wrap anim d1">
+            <span class="hero-title-word">A TO Z</span>
+          </div>
+
+          <!-- HYBRID aligns with resume row -->
+          <div style="border-top: var(--dot-border); padding: 0 44px; display:flex; align-items:center; height: var(--resume-h);" class="anim d2">
+            <span class="hero-word-hybrid" style="padding:0; border:none;">HYBRID</span>
+          </div>
+
+          <!-- DESIGNER aligns with portfolio row -->
+          <div style="border-top: var(--dot-border); padding: 0 44px; display:flex; align-items:center; height: var(--port-h);" class="anim d3">
+            <span class="hero-word-designer" style="padding:0; border:none;">DESIGNER</span>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div id="gradient-container"></div>
+        </div>
+      </div>
+
+     <!-- ══ PANEL 2: Who I am ══ -->
 
 
-<!-- about -->
-<section id="about">
-  <video>
-    <source src="">
-  </video>
-
-<!-- 떨어지는 태그들 -->
-<template id="falling">
-  <div class="container">
-    <div class="loader">
-      <span>UX/UI</span>
-      <span>Website</span>
-      <span>Application</span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    </template>
-</section>
 
 
-<!-- work -->
-<section id="work">
-  
- 
-    <!-- UX/UI 행 -->
-     
 
-     
-    <div class="category-row">
-      <div class="category-label">
-        <a href="#uxui"><h2>UX/UI</h2></a>
-      </div>
-      <div class="cards-container">
-        <div class="card"><img src="" alt="UX/UI project 1" /></div>
-        <div class="card"><img src="" alt="UX/UI project 2" /></div>
-        <div class="card"><img src="" alt="UX/UI project 3" /></div>
-        <div class="card"><img src="" alt="UX/UI project 4" /></div>
-      </div>
-    </div>
- 
-    <!-- GEN AI 행 -->
-    <div class="category-row">
-      <div class="category-label">
-        <a href="#genai"><h2>GEN AI</h2></a>
-      </div>
-      <div class="cards-container">
-        <div class="card"><img src="" alt="GEN AI project 1" /></div>
-        <div class="card"><img src="" alt="GEN AI project 2" /></div>
-        <div class="card"><img src="" alt="GEN AI project 3" /></div>
-        <div class="card"><img src="" alt="GEN AI project 4" /></div>
-      </div>
-    </div>
- 
-    <!-- E-COMMERCE 행 -->
-    <div class="category-row">
-      <div class="category-label">
-        <a href="#ecommerce"><h2>E-COMMERCE</h2></a>
-      </div>
-      <div class="cards-container">
-        <div class="card"><img src="" alt="E-COMMERCE project 1" /></div>
-        <div class="card"><img src="" alt="E-COMMERCE project 2" /></div>
-        <div class="card"><img src="" alt="E-COMMERCE project 3" /></div>
-        <div class="card"><img src="" alt="E-COMMERCE project 4" /></div>
-      </div>
-    </div>
- 
-    <!-- PRINT 행 -->
-    <div class="category-row">
-      <div class="category-label">
-        <a href="#print"><h2>PRINT</h2></a>
-      </div>
-      <div class="cards-container">
-        <div class="card"><img src="" alt="PRINT project 1" /></div>
-        <div class="card"><img src="" alt="PRINT project 2" /></div>
-        <div class="card"><img src="" alt="PRINT project 3" /></div>
-        <div class="card"><img src="" alt="PRINT project 4" /></div>
-      </div>
-    </div>
-  </section>
 
-<!-- contact -->
 
-<section id="contact">
-<aside class="menu">
-  <header>
-  <a href="#home"></a><i>INSUN</i></a>
-  </header> 
-    <nav class="home-nav">
-      <ul>
-      <li><a href="#about">Who I Am</a></li>
-      <li><a href="#work">Work</a></li>
-      <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="pdf">
-      <ul>
-        <li> 
-        <a href="#">RESUME
-          <i class="ri-download-2-line"></i>
-        </a>
-        </li>
-        <li>   
-        <a href="#">PORTFOLIO
-          <i class="ri-download-2-line"></i>
-        </a>  
-        </li>   
-      </ul>
-    </div>
-</aside>
+      <!-- ══ PANEL 3: WORK ══ -->
+     <section class="panel" id="panel-work"></section> 
+
+
+
+      <!-- <div class="panel" id="panel-work">
+        <h2 class="panel-heading anim">WORK</h2>
+        <div class="work-grid anim d2">
+          <div class="work-item">
+            <p class="work-num">01</p>
+            <p class="work-title">BRAND IDENTITY</p>
+            <p class="work-desc">스타트업 브랜드 아이덴티티 — 로고, 컬러 시스템, 가이드라인 설계</p>
+            <div class="work-tags"><span class="work-tag">Branding</span><span class="work-tag">Figma</span></div>
+            <span class="work-arrow">→</span>
+          </div>
+          <div class="work-item">
+            <p class="work-num">02</p>
+            <p class="work-title">WEB DESIGN</p>
+            <p class="work-desc">프로덕트 랜딩 페이지 디자인 및 프론트엔드 개발</p>
+            <div class="work-tags"><span class="work-tag">UI/UX</span><span class="work-tag">HTML/CSS</span></div>
+            <span class="work-arrow">→</span>
+          </div>
+          <div class="work-item">
+            <p class="work-num">03</p>
+            <p class="work-title">MOTION DESIGN</p>
+            <p class="work-desc">제품 소개 모션 그래픽 및 SNS 광고 영상 제작</p>
+            <div class="work-tags"><span class="work-tag">After Effects</span><span class="work-tag">Motion</span></div>
+            <span class="work-arrow">→</span>
+          </div>
+          <div class="work-item">
+            <p class="work-num">04</p>
+            <p class="work-title">APP UI</p>
+            <p class="work-desc">iOS / Android 앱 UI 설계 및 디자인 시스템 구축</p>
+            <div class="work-tags"><span class="work-tag">Mobile UI</span><span class="work-tag">Design System</span></div>
+            <span class="work-arrow">→</span>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- ══ PANEL 4: CONTACT ══ -->
+      <!-- <div class="panel" id="panel-contact">
+        <div class="contact-left">
+          <h2 class="panel-heading anim">GET IN TOUCH</h2>
+          <div class="contact-form anim d2">
+            <div class="field">
+              <label class="field-label">이메일 / Email</label>
+              <input type="email" id="c-email" placeholder="bora4u@naver.com">
+            </div>
+            <div class="field">
+              <label class="field-label">제목 / Subject</label>
+              <input type="text" id="c-subject" placeholder="문의 제목">
+            </div>
+            <div class="field">
+              <label class="field-label">내용 / Message</label>
+              <textarea id="c-message" placeholder="문의내용을 입력해주세요"></textarea>
+            </div>
+            <div class="send-row">
+              <button class="send-btn" onclick="sendMsg()">SEND MESSAGE →</button>
+            </div>
+          </div>
+        </div>
+        
+      </div> -->
+
 <footer>
 <div class="footer-section container">
                 <div class="contact-section">
-                    <h5>Contact</h5>
+                    <h5>Get In Touch With Me</h5>
                     <form id="contact-form" class="contact-box">
                         <div class="form-align">
                             <div class="input-box">
@@ -215,37 +206,27 @@
                
             </div>
 </footer>
-<!-- <main>
-  <h1 class="contct-title">
-    Get in touch with Me
-  </h1>
- <div class="contact-form">
-      <div class="field">
-        <label class="field-label">Email</label>
-        <input type="email" placeholder="bora4u@naver.com" id="email">
-      </div>
-      <div class="field">
-        <label class="field-label">제목</label>
-        <input type="text" placeholder="문의 제목을 입력해주세요" id="subject">
-      </div>
-      <div class="field">
-        <label class="field-label">Message</label>
-        <textarea placeholder="문의내용" id="message"></textarea>
-      </div>
-      <div class="send-row">
-        <button class="send-btn" onclick="handleSend()">SEND MESSAGE →</button>
-      </div>
-  </div>
-</main>
-<div class="toast" id="toast">메시지가 전송되었습니다 ✓</div> -->
+        
 
 
-</section>
-  
+    </div><!-- /track -->
+  </div><!-- /cell-main -->
 
-<script src="JS/email.js"></script>
+</div><!-- /shell -->
 
+<!-- dots nav -->
+<div class="dots-nav">
+  <span class="dot active" onclick="goTo(0)"></span>
+  <span class="dot"        onclick="goTo(1)"></span>
+  <span class="dot"        onclick="goTo(2)"></span>
+</div>
 
+<div class="toast" id="toast">메시지 전송 완료 ✓</div>
+<div class="custom-cursor" id="customCursor"></div>
 
+<script src="/JS/custom.js"></script>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="JS/gradation.js"></script>
 </body>
 </html>
