@@ -1,0 +1,148 @@
+/* header css */
+@media screen and (max-width:1599px) {
+    .site-navi-bar_wrap{
+        padding: 0 100px;
+    }
+    .site-navi-bar_main .main-nav .main-nav_wrap{
+        gap: 40px;
+    }
+    .site-navi-bar_main .logo{
+        width: 100px;
+        margin-right: 50px;
+    }
+}
+  
+/* section01 css */
+@media screen and (max-width:1599px) {
+    .main-hero-slide{
+        margin-left: 250px;
+    }
+    .main-hero-slide .text-nodes h3{
+        font-size: 20px;
+    }
+    .main-hero-slide .text-nodes h2{
+        font-size: 56px;
+    }
+    .cta-nodes{
+        top: 45vh;
+    }
+}
+
+/* section02 */
+@media screen and (max-width:1599px) {
+  .section02{
+    padding: 270px 0 0 250px;
+  }
+  .section02-title{
+    font-size: 36px;
+  }
+  .section02-desc{
+    font-size: 14px;
+    padding: 20px 0;
+  }
+  .section02-cate{
+    max-width: 1200px;
+  }
+  .section02-catebox_wrap{
+    margin-top:100px ;
+    margin-bottom: 50px;
+  }
+  .section02-catebox{
+    padding: 20px;
+  }
+  .section02-cate-title .section02-vehicle-name{
+    font-size: 20px;
+  }
+  .section02 .more-btn{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    height: 52px;
+  }
+}
+
+/* section04 css */
+@media screen and (max-width:1599px) {
+    .section04-title{
+        padding: 0 250px;
+        padding-top: 50px;
+    }
+    .section04-slider-btn .section04-prev, 
+    .section04-slider-btn .section04-next{
+        i{
+            font-size: 70px;
+        }
+    }
+}
+
+/* section05 */
+
+@media screen and (max-width:1599px) {
+  .section05{
+    margin-bottom: 120px;
+  }
+  .section05-content span{
+    font-size: 26px;
+  }
+  .section05-content{
+    padding: 35px 250px 0 35px;
+  }
+  .section05-content p{
+    font-size: 14px;
+    line-height: 28px;
+  }
+}
+
+/* section06 */
+
+@media screen and (max-width:1599px){
+  .section06{
+    height: 780px;
+  }
+  .section06-content{
+    margin: 0 100px;
+  }
+  .section06-content h2{
+    font-size: 42px;
+  }
+  .section06-content p{
+    padding: 50px 0;
+  }
+}
+
+/* section08 */
+
+@media screen and (max-width:1599px){
+  .section08{
+    padding: 120px 0;
+  }
+  .section08-wrap em{
+    font-size: 26px;
+  }
+}
+
+/* Footer css */
+@media screen and (max-width:1599px) {
+    footer{
+        padding: 0 100px;
+    }
+    .footer-info span{
+        font-size: 14px;
+    }
+    .footer-sitemap-item strong{
+        font-size: 14px;
+    }
+    .footer-sitemap-item .sitemap-item p{
+        font-size: 12px;
+    }
+    .footer-legal span, .family-item span{
+        font-size: 12px;
+    }
+    .footer-family{
+        width: 60%;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .footer-family .family-item i{
+        font-size: 16px;
+    }
+}

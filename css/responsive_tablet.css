@@ -1,0 +1,331 @@
+스토리지의 96% 사용됨 … 스토리지가 부족하면 파일을 만들거나 수정하거나 업로드할 수 없습니다. 3개월 동안 ₩600 ₩2,400에 가족 구성원과 100GB 스토리지를 공유하세요.
+/* header page css */
+/* 1023 ~ 1359px 까지의 CSS */
+@media screen and (max-width:1359px) {
+    .site-navi-bar_wrap{
+        padding: 0 76px;
+    }
+    .util-mypage{
+        display: block;
+        width: 17px;
+    }
+    .private-nav{
+        display: none;
+    }
+    .site-navi-bar_wrap .util-nav{
+        gap: 24px;
+    }
+}
+@media screen and (max-width:1023px) {
+    header,
+    .site-navi-bar_main .logo,
+    .site-navi-bar_main .main-nav,
+    .site-navi-bar_wrap .util-nav{
+        height: 60px;
+    }
+    .site-navi-bar_wrap{
+        padding: 0 20px;
+    }
+    .site-navi-bar_main .logo{
+        width: 84px;
+    }
+    .site-navi-bar_main .main-nav, .util-search{
+        display: none;
+    }
+}
+
+/* Section01 tablet css */
+@media screen and (max-width:1359px) {
+    .main-hero-slide{
+        margin-left: 225px;
+        top: 50px;
+    }
+    .main-hero-slide .text-nodes h3{
+        font-size: 18px;
+    }
+    .main-hero-slide .text-nodes h2{
+        font-size: 40px;
+    }
+    .cta-nodes{
+        top: 500px;
+    }
+    .hero-slide-index{
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    .section01{
+        top: 60px;
+    }
+    .main-hero-slide{
+        margin-left: 60px;
+        top: 10px;
+    }
+    .cta-nodes{
+        top: 350px;
+    }
+    .hero-slide-index{
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width:844px) {
+    .cta-nodes{
+        top: 120px;
+    }
+    .chatbot-box{
+        right: 20px;
+        bottom: 20px;
+    }
+    .chatbot-box img{
+        width: 40px;
+    }
+}
+
+/* Section02 tablet css */
+@media screen and (max-width:1359px) {
+    .section02{
+        padding: 250px 0 0 225px;
+    }
+    .section02-title{
+        font-size: 26px;
+    }
+    .section02-desc{
+        font-size: 12px;
+        padding: 15px 0;
+    }
+    .section02-cate{
+        max-width: 900px;
+    }
+    .section02-cate-title .section02-vehicle-name{
+        font-size: 18px;
+    }
+    .section02 .more-btn{
+        padding-top: 14px;
+        padding-bottom: 14px;
+        height: 48px;
+    }
+}
+@media screen and (max-width:1023px) {
+    .section02{
+        padding: 200px 0 0 100px;
+    }
+    .section02-cate{
+        max-width: 680px;
+    }
+    .section02-catebox_wrap{
+        gap: 20px;
+    }
+}
+
+/* Section04 tablet css */
+@media screen and (max-width:1359px) {
+    .section04{
+        height: 1100px;
+    }
+    .section04-title{
+        padding: 0 225px;
+    }
+    .section04-slider-btn .section04-prev, 
+    .section04-slider-btn .section04-next {
+        padding: 0;
+    }
+    .section04-pagenation{
+        padding-bottom: 200px;
+    }
+
+}
+@media screen and (max-width:1023px) {
+    .section04-slider .section04-background{
+        background-size: 170%;
+    }
+    .section04-title{
+        padding: 0 30px;
+    }
+    .section04-slider-btn .section04-prev, 
+    .section04-slider-btn .section04-next {
+        display: none;
+    }
+    .section04-swiper .section04-slide{
+        max-width: 510px;
+    }
+}
+
+/* Section05 tablet css */
+@media screen and (max-width:1359px) {
+    .section05{
+        margin-bottom: 0;
+    }
+    .section05-content{
+        padding: 25px 200px 0 25px;
+    }
+    .section05-content span{
+        font-size: 20px;
+    }
+    .section05-content p{
+        font-size: 12px;
+        line-height: 24px;
+    }
+    .section05-content a{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:1023px) {
+    .section05-img_wrap .img1920{
+        display: none;
+    }
+    .section05-img_wrap .img1023{
+        display: block;
+    }
+    .section05{
+        margin-bottom: 200px;
+    }
+}
+
+/* Section06 tablet css */
+@media screen and (max-width:1359px) {
+    .section06{
+        height: 590px;
+        margin-bottom: 200px;
+    }
+    .section06-content{
+        margin: 0 76px;
+    }
+    .section06-content h2{
+        font-size: 26px;
+    }
+    .section06-content p{
+        font-size: 16px;
+        padding: 20px 0;
+    }
+    .section06 .more-btn{
+        width: 188px;
+        height: 48px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+}
+@media screen and (max-width:1023px) {
+    .section06{
+        height: 410px;
+    }
+    .section06-content{
+        margin: 0 58px;
+    }
+}
+
+/* Section07 tablet css */
+@media screen and (max-width:1359px) {
+    .section07{
+        padding: 100px 0;
+    }
+    .section07-contentbox{
+        padding: 0 100px;
+    }
+}
+@media screen and (max-width:1023px) {
+    .section07-contentbox{
+        padding: 0 75px;
+    }
+}
+
+/* Section08 tablet css */
+@media screen and (max-width:1359px) {
+    .section08{
+        padding: 95px 0;
+    }
+    .section08-wrap{
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+}
+
+/* Footer tablet css */
+@media screen and (max-width:1359px) {
+    footer{
+        padding: 0 76px;
+    }
+}
+@media screen and (max-width:1023px) {
+    footer{
+        padding: 0 20px;
+    }
+    .footer-info_share span, .footer-info_share i{
+        display: none;
+    }
+    .footer-info .ri-share-forward-fill{
+        display: block;
+        color: #fff;
+    }
+    .footer-notice{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer-top{
+        padding: 0;
+    }
+    .footer-top .footer-sitemap{
+        flex-direction: column;
+    }
+    .footer-sitemap-item{
+        width: 100%;
+    }
+    .sitemap-list{
+        display: none;
+    }
+    .footer-sitemap-item .sitemap-title i{
+        display: block;
+    }
+    .sitemap-title{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .footer-inner{
+        flex-direction: column;
+        gap: 30px;
+        height: auto;
+    }
+    .footer-legal{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .footer-legal span{
+        margin-right: 0;
+        padding: 0 20px;
+    }
+    .footer-family{
+        flex-direction: column;
+        width: 100%;
+        gap: 30px;
+        margin: 10px 0;
+    }
+    .footer-family .family-item{
+        justify-content: space-between;
+        margin-right: 0;
+    }
+    .family-item i{
+        order: 1;
+    }
+    /* 
+        order 속성
+        order는 flexbox 레이아웃에서만 동작한다.
+        기본값이 0이며, 숫자가 작을수록 앞쪽에 배치된다.
+        order:1이라고 지정하면, 기본값 0을 가진 다른 요소들 뒤에 배치된다.
+    */
+    .footer-lang{
+        width: 100%;
+    }
+    .footer-lang .lang-box{
+        width: 50%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .footer-ally{
+        display: none;
+    }
+}

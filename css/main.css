@@ -1,0 +1,110 @@
+#home{background: #fff center/cover;
+  background-attachment: fixed;
+min-height: 100vh;
+display: flex;}
+#about{
+  position: relative;
+  overflow: hidden;
+  background-attachment: fixed;
+min-height: 100vh;}
+#about video{position: absolute;
+z-index: -10;
+top: 0;
+left: 0;}
+#work{background: palevioletred center/cover;
+  background-attachment: fixed;
+min-height: 100vh;
+}
+#contact{background: purple center/cover;
+  background-attachment: fixed;
+min-height: 100vh;}
+
+
+
+header{
+  border-bottom: 1px solid #000;
+  align-self: stretch; height: 10%;
+}
+header i{
+  width: 120px;
+  height: 2px; 
+  fill: linear-gradient(302deg, #482683 30.66%, #951B81 69.34%);
+}
+
+.menu{
+color: #000;
+background-color: #fff;
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+display: flex;
+width: 334px;
+height: 100vh;
+flex-direction: column;
+align-items: flex-start;
+border-right: 1px solid #000;
+
+}
+nav{
+  padding: 80px;
+  height: 60%;
+}
+.pdf{
+  font-size: 35px;
+display: flex;
+height: 30%;
+padding: 80px;
+align-items: center;
+gap: 40px;
+align-self: stretch;
+border-top: 1px solid #000;
+border-bottom: 1px solid #000;
+}
+
+#home main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 48px 52px;
+  background: var(--white);
+  position: relative;
+}
+.home-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(56px, 8.5vw, 118px);
+  line-height: 0.9;
+  color: var(--text);
+}
+ 
+.hero-title span { display: block; }
+
+
+
+
+/* email */
+footer .footer-section{display: flex; width: 100%;}
+footer .footer-section .contact-section{display: flex; width: 60%; max-width: 840px;  flex-direction: column; row-gap: 40px;}
+footer .footer-section .contact-section h5{font-size: 20px; font-weight: 200;}
+
+footer form{display: flex; flex-direction: column; row-gap: 40px;}
+footer form .form-align{display: flex; column-gap: 40px;}
+footer form .form-align .input-box{width: 400px; display: flex; flex-direction: column;}
+footer form input{background-color: transparent; padding: 16px 0;border: none; border-bottom: 1px solid #808080; color: #fbfbfb; outline: none; border-radius: 0;}
+footer form .message-box{width: 100%; display: flex; flex-direction: column; row-gap: 24px;}
+footer form .message-box #message{outline: none; width: 100%; border: 1px solid #808080; height: 144px; background-color: transparent; color: #fbfbfb; padding: 12px;resize: none; border-radius: 0;}
+footer form .send-btn{width: 100%; display: flex; justify-content: flex-end;}
+footer form .send-btn button{width: 400px; height: 44px; border: 1px solid #808080;background-color: transparent; color: #FBFBFB; padding: 14px 0; transition:all .3s;}
+footer form .send-btn button:hover{background-color: #FF00FF; border: none;}
+
+footer .company-info{display: flex; flex-direction: column; row-gap: 80px; padding-left: 250px;}
+footer .company-info span{font-size: 21px; color: #808080;}
+footer .company-info p{padding-top: 20px;}
+
+
+
+
+
+
+
+
